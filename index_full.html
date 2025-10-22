@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FintaNotizia.ai — Tutto generato da IA</title>
+  <meta name="description" content="Sito di notizie 100% generato da intelligenza artificiale. Tutto è fittizio e serve solo per demo e satira." />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    body { background:#0b1220; color:#e2e8f0; font-family:sans-serif; margin:0; padding:20px; }
+    h1, h2 { color:#22d3ee; }
+    .article { background:#0f172a; border-radius:12px; padding:16px; margin:12px 0; }
+    .meta { color:#94a3b8; font-size:14px; }
+    button { background:#22d3ee; border:none; color:#0b1220; padding:8px 14px; border-radius:8px; font-weight:bold; cursor:pointer; }
+    footer { margin-top:30px; color:#94a3b8; font-size:13px; }
+  </style>
+</head>
+<body>
+  <h1>🧠 FintaNotizia.ai — Giornale generato da IA</h1>
+  <p><strong>Attenzione:</strong> questo sito è interamente fittizio. Ogni testo è stato creato da un modello di intelligenza artificiale per fini dimostrativi.</p>
+
+  <div class="article">
+    <h2>🤖 L'IA si traveste da giornalista</h2>
+    <div class="meta">Pubblicato il <span id="data1"></span> — Autore: LLM vX.Y</div>
+    <p>Un esperimento dimostrativo mostra come un sistema generativo possa creare articoli plausibili ma inventati. Questa pagina ne è un esempio: tutto ciò che leggi qui è stato generato automaticamente.</p>
+  </div>
+
+  <div class="article">
+    <h2>🎭 Deepfake di opinioni</h2>
+    <div class="meta">Pubblicato il <span id="data2"></span> — Categoria: #IA</div>
+    <p>Le IA oggi possono scrivere notizie, opinioni e persino interviste completamente simulate. Questo sito serve come laboratorio educativo per riconoscere tali contenuti.</p>
+  </div>
+
+  <div class="article">
+    <h2>🛰️ Quando i bot fondano un giornale</h2>
+    <div class="meta">Pubblicato il <span id="data3"></span> — Categoria: #satira</div>
+    <p>Un gruppo di algoritmi decide di aprire un quotidiano interamente automatizzato. Nessun redattore, nessuna fonte, solo codice e creatività digitale.</p>
+  </div>
+
+  <button onclick="rigenera()">🔄 Rigenera contenuti casuali</button>
+
+  <footer>
+    <p>© 2025 FintaNotizia.ai — Tutto generato da intelligenza artificiale. Nessun fatto reale, solo dimostrazione tecnica.</p>
+  </footer>
+
+  <script>
+    const oggi = new Date().toLocaleDateString('it-IT',{ dateStyle:'long'});
+    document.getElementById('data1').textContent = oggi;
+    document.getElementById('data2').textContent = oggi;
+    document.getElementById('data3').textContent = oggi;
+
+    function rigenera(){
+      alert('Nuovi articoli generati (solo simulazione). Ricarica la pagina per vedere nuove date.');
+      location.reload();
+    }
+  </script>
+</body>
+</html>
